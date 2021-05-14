@@ -24,11 +24,11 @@ void displayOutput(float area) {
 
 int validateInput(float width, float height) {
     if (height <= 0) {
-        std::cout << "Error: the height must be a positive number!";
+        std::cout << "Error: the height must be a positive number!" << std::endl << std::endl;
         return -1;
     }
     if (width <= 0) {
-        std::cout << "Error: the width must be a positive number!";
+        std::cout << "Error: the width must be a positive number!" << std::endl << std::endl;
         return -2;
     }
     return 0;
