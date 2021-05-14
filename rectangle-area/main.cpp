@@ -1,5 +1,8 @@
 #include <iostream>
 
+#define VALIDATE_INPUT_INVALID_HEIGHT -1
+#define VALIDATE_INPUT_INVALID_WIDTH -1
+
 float area(float width, float height) {
     return height * width;
 }
@@ -25,11 +28,11 @@ void displayOutput(float area) {
 int validateInput(float width, float height) {
     if (height <= 0) {
         std::cout << "Error: the height must be a positive number!" << std::endl << std::endl;
-        return -1;
+        return VALIDATE_INPUT_INVALID_HEIGHT;
     }
     if (width <= 0) {
         std::cout << "Error: the width must be a positive number!" << std::endl << std::endl;
-        return -2;
+        return VALIDATE_INPUT_INVALID_WIDTH;
     }
     return 0;
 }
